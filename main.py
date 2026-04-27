@@ -1,3 +1,3 @@
 import streamlit as st 
-st.title("ball ball ballin'")
-st.write("tawk huah")
+st.title("Welcome to Streamlit")
+st.write("Uhh hi?")
