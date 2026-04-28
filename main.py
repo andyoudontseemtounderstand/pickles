@@ -13,8 +13,8 @@ with st.form("my_form"):
     submitted = st.form_submit_button("Press this so I can sell your info")
     
     if submitted:
-        if not name or not email:
-            st.error("Hey! I can't sell your info without a filled form")
+        if not name or not email or not age or not gender:
+            st.error("Fill your fucking form x_x")
         else:
             if gender == "m":
                 st.success(f"{name} is a {age} year old male specimen.")
