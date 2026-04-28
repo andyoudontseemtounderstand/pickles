@@ -7,7 +7,7 @@ with st.form("my_form"):
     name = st.text_input("Name")
     email = st.text_input("Email")
     age = st.number_input("Enter your age", value=0, min_value=0, step=1)
-    gender = st.text_input("Enter "M" for male or "F" for female.").lower()
+    gender = st.text_input("Enter 'M' for male or 'F' for female.").lower()
     
     # Every form must have a submit button
     submitted = st.form_submit_button("Press this so I can sell your info")
@@ -17,8 +17,8 @@ with st.form("my_form"):
             st.error("Hey! I can't sell your info without a filled form")
         else:
             if gender == "m":
-                st.success(f"{name} is a good boy!")
+                st.success(f"{name} is a {age} year old male specimen.")
             elif gender == "f":
-                st.success(f"{name} is a good girl!")
+                st.success(f"{name} is a {age} year old female specimen.")
             else:
                 st.error("How in the actual fuck are you incapable of mentioning your own gender?")
