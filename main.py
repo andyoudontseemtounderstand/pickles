@@ -6,7 +6,7 @@ st.write()
 with st.form("my_form"):
     name = st.text_input("Name")
     email = st.text_input("Email")
-    age = st.number_input("Enter your age", value=0, min_value=0, step=1)
+    age = st.number_input("Enter your age", value=0, min_value=0, step=1, max_value=132)
     gender = st.text_input("Enter 'M' for male or 'F' for female.").lower()
     
     # Every form must have a submit button
