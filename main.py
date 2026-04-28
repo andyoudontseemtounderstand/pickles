@@ -8,7 +8,7 @@ with st.form("my_form"):
     email = st.text_input("Email (Required)")
     
     # Every form must have a submit button
-    submitted = st.form_submit_button("Submit")
+    submitted = st.form_submit_button("Press this so I can sell your info")
     
     if submitted:
         if not name or not email:
